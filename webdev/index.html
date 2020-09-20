@@ -9,9 +9,10 @@
 <body>
 <header>
     <div class="container">
+    <h1 class="task">webdev</h1>
         <nav>
             <div class="side_nav">
-                <a class="nav_link" href="#">About</a>
+                <a class="nav_link task_nav task_nav_link" href="#">About</a>
                 <a class="nav_link" href="#">Syllabus</a>                    
             </div>
             <div id="logo"><img src="assets/Vector.svg" alt="logo"></div>
@@ -51,7 +52,7 @@
         <div class="inner_rappresent">
             <div class="rappresent_content">
                 <h2 class="subtitle">Rappresent your idea with <br>a smart Design</h2>
-                <p class="text_block">Tasks accompanying and related to programming include: testing, debugging, source code maintenance, <b>implementation of build systems</b>, and management of derived artifacts, such as the machine code of computer programs. </p>
+                <p class="text_block">Tasks accompanying and related to programming include: testing, debugging, source code maintenance, <strong>implementation of build systems</strong>, and management of derived artifacts, such as the machine code of computer programs. </p>
                 <a class="start_button" href="#">Get started</a>
             </div>
             <div class="spacer_img"></div>
@@ -75,7 +76,11 @@
 
             <div class="nav_slider">
                 <div class="slider_nav_btn"><a class="slider_btn" href="#"><img src="assets/left-arrow.svg" alt="prev"></a></div>
-                <p class="slider_counter">1 / 5</p>
+                <p class="slider_counter">
+                    <span>1</span>
+                    <span>/</span>
+                    <span>5</span>
+                </p>
                 <div class="slider_nav_btn"><a class="slider_btn" href="#"><img src="assets/right-arrow.svg" alt="next"></a></div>
             </div>
 
@@ -97,7 +102,7 @@
             <div class="spacer_img2"></div>
             <div class="rappresent_content">
                 <h2 class="subtitle">Implement right Code</h2>
-                <p class="text_block">These might be considered part of the <b>programming process</b>, but often the term software development is used for this larger process with the term programming, implementation</p>
+                <p class="text_block">These might be considered part of the <strong>programming process</strong>, but often the term software development is used for this larger process with the term programming, implementation</p>
                 <a class="start_button learn_button" href="#">Learn more</a>
             </div>                        
         </div>
@@ -109,8 +114,8 @@
         <div class="inner_signup">
             <p class="title-email-form">sign up for our newsletter</p>
                 
-            <form class="email-form">
-                <input type="text" placeholder="E-mail" name="email">
+            <form class="email-form" action="#">
+                <input type="email" required placeholder="E-mail" name="email">
                 <button class="hover" type="submit"><img src="assets/fa-check.svg" alt="submit"></button>
             </form>            
         </div> 
@@ -143,11 +148,11 @@
         <div class="inner_footer">
             <div class="additional_menu">
                 <ul>
-                    <li><a href="#">Credits</a></li>
+                    <li><a class="am_link" href="#">Credits</a></li>
                     <div class="vertical"></div> 
-                    <li><a href="#">Privacy</a></li>
+                    <li><a class="am_link" href="#">Privacy</a></li>
                     <div class="vertical"></div> 
-                    <li><a href="#">Our teams</a></li>                        
+                    <li><a class="am_link" href="#">Our teams</a></li>                        
                 </ul>
             </div>
 
