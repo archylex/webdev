@@ -13,6 +13,11 @@ body {
     box-sizing: border-box;
 }
 
+.task {
+    position: absolute;
+    display: none;
+}
+
 /* Header */
 
 header {
@@ -55,7 +60,24 @@ nav {
     transition: opacity .1s linear;
 }
 
-.nav_link:after {
+.task_nav:after  {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+
+.task_nav_link {
+    opacity: 1;
+}
+
+.nav_link:before {
     position: absolute;
     top: 100%;
     left: 0px;
@@ -73,7 +95,7 @@ nav {
     opacity: 1;
 }
 
-.nav_link:hover:after {
+.nav_link:hover:before {
     opacity: 1;
 }
 
@@ -151,6 +173,12 @@ p.intro_text {
 .social_link {
     margin-left: 15px;
     margin-right: 15px;
+    opacity: 0.8;
+    transition: opacity .1s linear;
+}
+
+.social_link:hover {
+    opacity: 1;
 }
 
 /* button */
@@ -393,7 +421,7 @@ p.slider_counter {
     height: 46px;
 }
 
-.email-form input[type=text] {
+.email-form input[type=email] {
     width: 340px;
     height: 46px;
     padding-top: 10px;
@@ -560,9 +588,15 @@ footer {
     color: #818181;
 }
 
-a {
+a.am_link {
     text-decoration: none;
     color: #FFFFFF;
+    opacity: 0.8;
+    transition: opacity .1s linear;
+}
+
+a.am_link:hover {
+    opacity: 1;
 }
 
 .nav__link-logo {
